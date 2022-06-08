@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <Version>1.0.0</Version>
+        <Company>Lykke Business</Company>
+        <Copyright>Copyright (c) 2022 Lykke Business.</Copyright>
+        <LangVersion>latest</LangVersion>
+        <PackageId>Lykke.Snow.Audit</PackageId>
+    </PropertyGroup>
+
+</Project>
