@@ -1,8 +1,7 @@
 name: Publish to nuget
 on:
   push:
-    branches:
-      - master
+    tags: "*"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,6 +14,6 @@ jobs:
     - name: Build with dotnet
       run: dotnet build --configuration Release
     - name: Create the package
-      run: dotnet pack --include-symbols --include-source --configuration Release src/Lykke.Snow.Audit /p:Version=${GITHUB_REF#refs/tags/}
+      run: dotnet pack --include-symbols --include-source --configuration Release src/Lykke.Snow.Audit/Lykke.Snow.Audit.csproj /p:Version=${GITHUB_REF#refs/tags/}
     - name: Publish the package to Nuget
       run: dotnet nuget push src/Lykke.Snow.Audit/bin/Release/*.nupkg -s "https://api.nuget.org/v3/index.json" -k ${{ secrets.NUGET_TOKEN }}
