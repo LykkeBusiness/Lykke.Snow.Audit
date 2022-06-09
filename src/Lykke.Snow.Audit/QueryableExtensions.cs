@@ -5,6 +5,13 @@ namespace Lykke.Snow.Audit
 {
     public static class QueryableExtensions
     {
+        /// <summary>
+        /// Applies audit filter to the query
+        /// </summary>
+        /// <param name="query"></param>
+        /// <param name="filter"></param>
+        /// <typeparam name="T"></typeparam>
+        /// <returns></returns>
         public static IQueryable<IAuditModel<T>> ApplyFilter<T>(this IQueryable<IAuditModel<T>> query, AuditTrailFilter<T> filter)
         {
             if (!string.IsNullOrEmpty(filter.UserName))
