@@ -6,7 +6,7 @@ namespace Lykke.Snow.Audit.Abstractions
     /// An interface to be implemented and/or extended by auditor
     /// </summary>
     /// <typeparam name="T">The domain specific data type of the auditable object</typeparam>
-    public partial interface IAuditService<T>
+    public interface IAuditService<in T>
     {
         Task<bool> TryAudit(string correlationId,
             string userName,
