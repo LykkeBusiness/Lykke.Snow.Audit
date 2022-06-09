@@ -12,4 +12,8 @@
         <PackageId>Lykke.Snow.Audit</PackageId>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="JsonDiffPatch.Net" Version="2.3.0" />
+    </ItemGroup>
+
 </Project>
