@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Lykke.Snow.Audit.Abstractions
 {
     /// <summary>
@@ -19,9 +21,11 @@ namespace Lykke.Snow.Audit.Abstractions
         string GetAuditReference();
 
         /// <summary>
-        /// The JSON representation of the object for audit purposes
+        /// The JSON representation of the object for audit purposes.
+        /// The default implementation returns the JSON representation of the object.
         /// </summary>
-        /// <returns></returns>
-        string ToAuditJson();
+        /// <returns>JSON text</returns>
+        string ToAuditJson() => JsonConvert.SerializeObject(this,
+            new JsonSerializerSettings { NullValueHandling = NullValueHandling.Include });
     }
 }
