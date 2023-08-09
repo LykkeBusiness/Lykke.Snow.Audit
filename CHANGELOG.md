@@ -1,6 +1,4 @@
-## [[tbd]] - Nova 2. Delivery X ([[date to be defined]])
+## [[tbd]] - (2023-08-09)
 
 ### Added
-### Changed
-### Removed
-### Fixed
+* New nuget publication workflow
