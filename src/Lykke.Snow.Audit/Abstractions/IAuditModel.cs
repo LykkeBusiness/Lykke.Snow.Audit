@@ -17,6 +17,7 @@ namespace Lykke.Snow.Audit.Abstractions
         public string UserName { get; set; }
 
         public AuditEventType Type { get; set; }
+
         public string ActionTypeDetails { get; set; }
 
         public T DataType { get; set; }
