@@ -11,6 +11,7 @@ namespace Lykke.Snow.Audit
         public string CorrelationId { get; set; }
         public string UserName { get; set; }
         public AuditEventType? ActionType { get; set; }
+        public string ActionTypeDetails { get; set; }
         public T[] DataTypes { get; set; }
         public string ReferenceId { get; set; }
         public DateTime? StartDateTime { get; set; }
