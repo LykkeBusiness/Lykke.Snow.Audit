@@ -29,8 +29,8 @@ namespace Lykke.Snow.Audit
             if (filter.ActionType.HasValue)
                 query = query.Where(x => x.Type == filter.ActionType.Value);
 
-            if (!string.IsNullOrEmpty(filter.ActionEventTypeDetails))
-                query = query.Where(x => x.ActionEventTypeDetails.ToLower().Contains(filter.ActionEventTypeDetails.ToLower()));
+            if (!string.IsNullOrEmpty(filter.AuditEventTypeDetails))
+                query = query.Where(x => x.AuditEventTypeDetails.ToLower().Contains(filter.AuditEventTypeDetails.ToLower()));
 
             if (filter.StartDateTime.HasValue)
                 query = query.Where(x => x.Timestamp >= filter.StartDateTime.Value);

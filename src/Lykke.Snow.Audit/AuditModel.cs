@@ -15,7 +15,7 @@ namespace Lykke.Snow.Audit
 
         public AuditEventType Type { get; set; }
 
-        public string ActionEventTypeDetails { get; set; }
+        public string AuditEventTypeDetails { get; set; }
 
         public T DataType { get; set; }
 
