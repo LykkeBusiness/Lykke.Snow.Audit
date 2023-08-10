@@ -1,4 +1,4 @@
-## [[tbd]] - Version [[tbd]] (2023-08-10)
+## 1.3.1 - Version 1.3.1 (2023-08-10)
 
 ### Changed
 * Add AuditEventTypeDetails field
