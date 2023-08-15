@@ -11,7 +11,11 @@
         <LangVersion>latest</LangVersion>
         <PackageId>Lykke.Snow.Audit</PackageId>
     </PropertyGroup>
-
+    <ItemGroup>
+      <None Update="Dockerfile">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </None>
+    </ItemGroup>
     <ItemGroup>
       <PackageReference Include="JsonDiffPatch.Net" Version="2.3.0" />
     </ItemGroup>
