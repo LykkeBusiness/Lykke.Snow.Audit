@@ -1,14 +1,4 @@
-## 1.3.2 - Version 1.3.2 (2023-08-16)
-
-### Changed
-* Update nuget workflow publication template
-
-## 1.3.1 - Version 1.3.1 (2023-08-10)
-
-### Changed
-* Add AuditEventTypeDetails field
-
-## 1.2.2 (2023-08-09)
+## 1.3.2 (2023-08-16)
 
 ### Added
 * New nuget publication workflow
