@@ -7,6 +7,7 @@ namespace Lykke.Snow.Audit
     {
         Edition,
         Creation,
-        Deletion
+        Deletion,
+        StatusChanged
     }
 }
