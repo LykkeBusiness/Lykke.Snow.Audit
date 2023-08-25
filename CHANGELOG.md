@@ -1,4 +1,4 @@
-## [[tbd]] (2023-08-25)
+## 1.3.4 (2023-08-25)
 
 ### Added
 * LT-4958: Added 'StatusChanged' Action Type
