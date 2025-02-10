@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lykke.Snow.Audit", "src\Lykke.Snow.Audit\Lykke.Snow.Audit.csproj", "{EF479211-36F8-4BD2-B76A-4BC4F5F23B15}"
@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		CHANGELOG.md = CHANGELOG.md
 		README.md = README.md
 		global.json = global.json
+		.github\workflows\publish-nuget-package.yml = .github\workflows\publish-nuget-package.yml
 	EndProjectSection
 EndProject
 Global
